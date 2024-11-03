@@ -41,11 +41,11 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "Worxweb"
+    title: str = "WorxwebAI"
     logo: Optional[str] = "/static/logo.png"          # Adjusted path
     chat_logo: Optional[str] = "/static/chat-icon.png" # Adjusted path
-    chat_title: str = "Start chatting"
-    chat_description: str = "This chatbot is configured to answer your questions"
+    chat_title: str = "How can I be of service?"
+    chat_description: str = "This chatbot is configured to search our files and answer your questions!"
     favicon: str = "/favicon.ico"                      # Unchanged, as it's working
     show_share_button: bool = False
     show_chat_history_button: bool = True
@@ -118,7 +118,7 @@ class _AzureOpenAISettings(BaseSettings):
     logit_bias: Optional[dict] = None
     presence_penalty: Optional[confloat(ge=-2.0, le=2.0)] = 0.0
     frequency_penalty: Optional[confloat(ge=-2.0, le=2.0)] = 0.0
-    system_message: str = "You are an AI assistant that helps people find information."
+    system_message: str = "You are an AI assistant that works for worxweb solutions and helps people find information using company files. You return well formatted responses utilizing new lines when appropriate. Our website is https://worxwebsollutions.com everything you need to know about what we do can be found there."
     preview_api_version: str = MINIMUM_SUPPORTED_AZURE_OPENAI_PREVIEW_API_VERSION
     embedding_endpoint: Optional[str] = None
     embedding_key: Optional[str] = None
