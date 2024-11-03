@@ -1,9 +1,11 @@
 name: Check changes to static files
 
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
+
 
 jobs:
   changed_files:
