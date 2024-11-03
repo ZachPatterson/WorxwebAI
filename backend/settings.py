@@ -41,9 +41,9 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "Contoso"
-    logo: Optional[str] = None
-    chat_logo: Optional[str] = None
+    title: str = "Worxweb"
+    logo: Optional[str] = "/logo.png"
+    chat_logo: Optional[str] = "/chat-icon.png"
     chat_title: str = "Start chatting"
     chat_description: str = "This chatbot is configured to answer your questions"
     favicon: str = "/favicon.ico"
