@@ -42,12 +42,12 @@ class _UiSettings(BaseSettings):
     )
 
     title: str = "Worxweb"
-    logo: Optional[str] = "/logo.png"
-    chat_logo: Optional[str] = "/chat-icon.png"
+    logo: Optional[str] = "/static/logo.png"          # Adjusted path
+    chat_logo: Optional[str] = "/static/chat-icon.png" # Adjusted path
     chat_title: str = "Start chatting"
     chat_description: str = "This chatbot is configured to answer your questions"
-    favicon: str = "/favicon.ico"
-    show_share_button: bool = True
+    favicon: str = "/favicon.ico"                      # Unchanged, as it's working
+    show_share_button: bool = False
     show_chat_history_button: bool = True
 
 
